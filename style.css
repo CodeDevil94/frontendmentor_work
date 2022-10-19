@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* primary */
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* neutral colors */
+
+    --very-pale-blue:  hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+}
+    
+    
+
+   
+
+
+body {
+    font-family: 'Red Hat Display';
+    background-image: url(pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 450px;
+    border: 1px solid var(--very-pale-blue);
+    overflow: hidden;
+    height: 650px;
+    border-radius: 15px;
+    background-color: var(--very-pale-blue);
+}
+
+.content {
+font-size: 16px;
+margin-top: 20px;
+margin-left: 90px;
+margin-right: 60px;
+}
+
+h1 {
+    padding-bottom: 10px;
+    color: var(--dark-blue);
+}
+.content p {
+    color: var(--desaturated-blue);
+    line-height: 1.5rem;
+}
+
+.money {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 40px;
+    border: 2px var(--ßpale-blue);
+    background-color: var(--pale-blue);
+    border-radius: 10px;
+    height: 80px;
+    padding: 10px;
+    max-width: 350px;
+}
+
+.money img {
+    height: 3rem;
+}
+
+.money p {
+padding-right: 100px;
+font-weight: bold;
+}
+
+
+.money a {
+    padding-right: 10px;
+
+}
+
+span {
+    font-weight: lighter;
+    color: var(--desaturated-blue);
+    font-size: 0.9rem;
+}
+
+button {
+   margin: 10px 40px;
+   padding: 10px 85px;
+   display: block;
+   border: 1px var(--very-pale-blue);
+   background-color: var(--bright-blue);
+   color: var(--very-pale-blue);
+   font-weight: bold;
+   border-radius: 10px;
+   box-shadow: 0px 0px 0px 1px var(--bright-blue);
+
+}
+
+footer {
+    margin: 20px 180px;
+    color: var(--desaturated-blue);
+}
+
+@media (max-width: 768px) {
+body {
+    background-image: url(pattern-background-mobile.svg);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+}
+
+
+
+
